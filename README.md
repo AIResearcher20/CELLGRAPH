@@ -1,19 +1,4 @@
- <div align="center">
-
-# 🧬 CELLGRAPH
-
-### Graph Representation Learning for Single-Cell Transcriptomics
-
-**Learning Biologically Meaningful Cellular Representations with Graph Neural Networks**
-
 <br>
-
-<p>
-<div align="center">
-
-<img src="assets/cellgraph_banner.jpg" width="100%" />
-
-<br><br>
 
 <h1>
 🧬 CELLGRAPH
