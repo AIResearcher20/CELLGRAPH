@@ -23,7 +23,7 @@
 
 </div>
 <p align="center">
-  <img src="assets/cellgraph_banner.jpg" alt="CELLGRAPH Banner" width="100%">
+  <img src="assets/cellgraph_banner.jpg" alt="CELLGRAPH Banner" width="90%">
 </p>
 
 ---
