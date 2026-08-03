@@ -22,8 +22,9 @@
 <img src="https:/https://github.com/AIResearcher20/CELLGRAPH/CELLGRAPH/main/assets/cellgraph_banner.png" width="900">
 
 </div>
+
 <p align="center">
-  <img src="assets/cellgraph_banner.jpg" alt="CELLGRAPH Banner" width="90%">
+  <img src="assets/cellgraph_banner.jpg" width="100%">
 </p>
 
 ---
