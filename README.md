@@ -1,17 +1,29 @@
 
 
-🧬 CELLGRAPH:
-Graph Representation Learning for Single-Cell Transcriptomics
+🧬 <div align="center">
 
-Learning Biologically Meaningful Cellular Representations with Graph Neural Networks
+# 🧬 CELLGRAPH
 
-https://img.shields.io/badge/Python-3.9%2B-blue.svg
-https://img.shields.io/badge/PyTorch-2.0%2B-red.svg
-https://img.shields.io/badge/License-MIT-green.svg
-https://img.shields.io/badge/Scanpy-1.9%2B-orange.svg
-https://img.shields.io/badge/Status-Completed-success.svg
-https://img.shields.io/github/stars/AIReasercher20/CELLGRAPH.svg?style=social
+### Graph Representation Learning for Single-Cell Transcriptomics
 
+**Learning Biologically Meaningful Cellular Representations with Graph Neural Networks**
+
+<br>
+
+<p>
+<img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg">
+<img src="https://img.shields.io/badge/PyTorch-2.0%2B-red.svg">
+<img src="https://img.shields.io/badge/License-MIT-green.svg">
+<img src="https://img.shields.io/badge/Scanpy-1.9%2B-orange.svg">
+<img src="https://img.shields.io/badge/Status-Completed-success.svg">
+<img src="https://img.shields.io/github/stars/AIReasercher20/CELLGRAPH.svg?style=social">
+</p>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/AIReasercher20/CELLGRAPH/main/assets/cellgraph_banner.png" width="900">
+
+</div>
 
 ---
 
