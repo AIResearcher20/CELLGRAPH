@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/cellgraph_banner.jpg" alt="CELLGRAPH Banner" width="100%">
+</p>
+
 <div align="center">
 
 <h1>
