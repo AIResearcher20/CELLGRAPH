@@ -30,7 +30,7 @@ Learning Biologically Meaningful Cellular Representations with Graph Neural Netw
 <p align="center">
 <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
-<img src="https://img.shields.io/github/stars/AIReasercher20/CELLGRAPH?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.iohttps://github.com/AIResearcher20/CELLGRAPH/tree/main/?style=for-the-badge&logo=github"/>
 </p>
 
 </div>
