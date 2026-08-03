@@ -9,13 +9,44 @@
 <br>
 
 <p>
-<img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg">
-<img src="https://img.shields.io/badge/PyTorch-2.0%2B-red.svg">
-<img src="https://img.shields.io/badge/License-MIT-green.svg">
-<img src="https://img.shields.io/badge/Scanpy-1.9%2B-orange.svg">
-<img src="https://img.shields.io/badge/Status-Completed-success.svg">
-<img [![GitHub stars](https://img.shields.io/github/stars/AIResearcher20/CELLGRAPH?style=social)](https://github.com/AIResearcher20/CELLGRAPH)
+<div align="center">
+
+<img src="assets/cellgraph_banner.jpg" width="100%" />
+
+<br><br>
+
+<h1>
+🧬 CELLGRAPH
+</h1>
+
+<h2>
+Graph Representation Learning for Single-Cell Transcriptomics
+</h2>
+
+<p>
+<i>
+Learning Biologically Meaningful Cellular Representations with Graph Neural Networks
+</i>
 </p>
+
+<br>
+
+<p>
+<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<img src="https://img.shields.io/badge/Scanpy-1.9%2B-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Graph%20Neural%20Networks-GNN-8A2BE2?style=for-the-badge" />
+</p>
+
+<p>
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+<img src="https://img.shields.io/github/stars/AIReasercher20/CELLGRAPH?style=for-the-badge&logo=github" />
+</p>
+
+<br>
+
+</div>
 
 <br>
 
