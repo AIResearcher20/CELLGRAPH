@@ -1,0 +1,12 @@
+Metric,Value
+Best Model,GAT
+Accuracy (GAT),0.9111
+Macro F1 (GAT),0.8662
+Silhouette Score,0.3156
+Davies-Bouldin Index,1.0276
+Calinski-Harabasz Index,189.66
+ECE (Calibration),0.1048
+Brier Score,0.0571
+Parameters (GAT),"12,096"
+Training Time (GAT),0.61s
+Noise Robustness (20%),95.93%
