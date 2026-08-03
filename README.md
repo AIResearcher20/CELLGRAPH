@@ -14,7 +14,7 @@
 <img src="https://img.shields.io/badge/License-MIT-green.svg">
 <img src="https://img.shields.io/badge/Scanpy-1.9%2B-orange.svg">
 <img src="https://img.shields.io/badge/Status-Completed-success.svg">
-<img src="https://img.shields.io/github/stars/AIReasercher20/CELLGRAPH.svg?style=social">
+<img [![GitHub stars](https://img.shields.io/github/stars/AIResearcher20/CELLGRAPH?style=social)](https://github.com/AIResearcher20/CELLGRAPH)
 </p>
 
 <br>
