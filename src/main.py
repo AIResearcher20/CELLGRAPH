@@ -1,5 +1,5 @@
 # ============================================================
-# CELLGRAPH - MAIN PIPELINE
+# CELLGRAPH - MAIN PIPELINE 
 # ============================================================
 
 import scanpy as sc
@@ -12,7 +12,7 @@ from src.data_loader import load_pbmc3k
 from src.models import GATEncoder, GraphClassifier
 from src.utils import build_graph
 from src.train import train_model
-from src.evaluate import evaluate_model
+from src.evaluate import evaluate_model  # ✅ نسخه کامل
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}")
@@ -31,6 +31,7 @@ sc.tl.leiden(adata, resolution=0.5)
 le = LabelEncoder()
 y = le.fit_transform(adata.obs["leiden"].astype(str))
 n_classes = len(np.unique(y))
+class_names = le.classes_
 print(f"Number of classes: {n_classes}")
 
 # ============================================================
@@ -76,9 +77,36 @@ model, losses = train_model(model, data, train_idx_t, val_idx_t)
 print("Training complete!")
 
 # ============================================================
-# 8️⃣ EVALUATE MODEL
+# 8️⃣ EVALUATE MODEL 
 # ============================================================
-acc, f1 = evaluate_model(model, data, test_idx_t)
-print(f"\n✅ Final Results:")
-print(f"   Accuracy:  {acc:.4f}")
-print(f"   Macro F1:  {f1:.4f}")
+results = evaluate_model(
+    model,
+    data,
+    test_idx_t,
+    class_names=class_names,
+    return_details=True
+)
+
+print("\n" + "="*50)
+print("📊 FINAL RESULTS")
+print("="*50)
+print(f"Accuracy:          {results['accuracy']:.4f}")
+print(f"Macro F1:          {results['macro_f1']:.4f}")
+print(f"Weighted F1:       {results['weighted_f1']:.4f}")
+print(f"Balanced Accuracy: {results['balanced_accuracy']:.4f}")
+
+# ============================================================
+# 9️⃣ OPTIONAL: Save results
+# ============================================================
+import pandas as pd
+results_df = pd.DataFrame({
+    'Metric': ['Accuracy', 'Macro F1', 'Weighted F1', 'Balanced Accuracy'],
+    'Value': [
+        results['accuracy'],
+        results['macro_f1'],
+        results['weighted_f1'],
+        results['balanced_accuracy']
+    ]
+})
+results_df.to_csv("results/final_results.csv", index=False)
+print("\n✅ Results saved to results/final_results.csv")
