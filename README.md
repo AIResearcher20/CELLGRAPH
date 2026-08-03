@@ -1,6 +1,4 @@
-
-
-🧬 <div align="center">
+ <div align="center">
 
 # 🧬 CELLGRAPH
 
@@ -21,7 +19,7 @@
 
 <br>
 
-<img src="https://raw.githubusercontent.com/AIReasercher20/CELLGRAPH/main/assets/cellgraph_banner.png" width="900">
+<img src="https:/https://github.com/AIResearcher20/CELLGRAPH/CELLGRAPH/main/assets/cellgraph_banner.png" width="900">
 
 </div>
 
