@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data
+*.h5ad
+*.h5
+*.csv
+*.pt
+*.pkl
+
+# Colab
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
