@@ -1,0 +1,4 @@
+Model,Accuracy,Macro F1,Parameters,Time (s)
+GCN,0.8167,0.7632,3744,0.33
+GAT,0.9111,0.8662,12096,0.61
+GraphSAGE,0.7296,0.6682,7392,0.29
