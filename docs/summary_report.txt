@@ -1,0 +1,115 @@
+================================================================================
+CELLGRAPH: Graph Representation Learning for Single-Cell Transcriptomics
+================================================================================
+
+Executive Summary
+-----------------
+CELLGRAPH is a research framework for learning biologically meaningful cellular
+representations from single-cell transcriptomic data using Graph Neural Networks
+(GNNs). The framework models cell-cell relationships through graph-based learning
+to generate informative latent embeddings for downstream cellular cluster
+prediction and biological interpretation.
+
+Best Performing Model
+---------------------
+Graph Attention Network (GAT)
+- 3-layer architecture
+- 4 attention heads
+- 32-dimensional latent embedding
+- Dropout: 0.3
+
+Results Summary
+---------------
+Accuracy:             91.11%
+Macro F1 Score:       86.62%
+
+Model Comparison (PBMC 3k)
+---------------------------
+| Model      | Accuracy | Macro F1 | Parameters |
+|------------|----------|----------|------------|
+| GCN        | 81.67%   | 76.32%   | 3,744      |
+| GAT (Ours) | 91.11%   | 86.62%   | 12,096     |
+| GraphSAGE  | 72.96%   | 66.82%   | 7,392      |
+
+Cross-Dataset Generalization
+(PBMC 3k → PBMC 68k)
+------------------------------------------------------------
+| Method                         | Accuracy | Macro F1 |
+|--------------------------------|----------|----------|
+| PCA + Logistic Regression      | 76.43%   | 61.08%   |
+| PCA + Random Forest            | 82.86%   | 65.32%   |
+| PCA + KNN                      | 77.14%   | 61.94%   |
+| GAT (No Feature Alignment)     | 0.71%    | 0.87%    |
+
+Observation:
+Direct cross-dataset transfer without feature alignment performs poorly,
+highlighting the importance of domain adaptation and transfer learning for
+single-cell transcriptomic analysis.
+
+Robustness to Noise
+-------------------
+| Noise Level | Accuracy | Macro F1 |
+|-------------|----------|----------|
+| 5%          | 95.37%   | 95.56%   |
+| 10%         | 93.89%   | 90.01%   |
+| 20%         | 95.93%   | 93.15%   |
+
+Observation:
+The model maintains stable performance under synthetic noise perturbations,
+indicating strong robustness to noisy biological measurements.
+
+Biological Validation
+---------------------
+Representative marker genes identified by the learned representations:
+
+• Monocytes / Macrophages
+  LYZ, S100A8, S100A9, CST3, TYROBP
+
+• T / NK Cells
+  NKG7, CD74
+
+• Dendritic Cells
+  HLA-DRA, HLA-DPB1, HLA-DPA1
+
+• T Cells
+  CCL5
+
+These marker genes are consistent with established immune cell biology,
+suggesting that the learned embeddings capture biologically meaningful cellular
+states.
+
+Key Findings
+------------
+1. GAT achieved the best overall performance among all evaluated GNN models.
+2. Attention-based message passing improves representation learning for
+   heterogeneous cellular neighborhoods.
+3. Direct transfer across independent datasets is ineffective without feature
+   alignment or domain adaptation.
+4. The learned embeddings preserve biologically relevant immune cell structure.
+5. The framework demonstrates strong robustness under synthetic noise.
+6. The architecture is readily extensible to multi-modal single-cell data.
+
+Future Directions
+-----------------
+• Domain adaptation for cross-dataset generalization
+• Self-supervised graph representation learning
+• Real RNA + ATAC multi-omics integration
+• Spatial transcriptomics integration
+• Clinical immune profiling applications
+
+Repository Structure
+--------------------
+src/          Source code
+results/      Figures, trained models, embeddings, and evaluation outputs
+docs/         Documentation
+README.md     Project overview and usage guide
+
+================================================================================
+Author: Sepideh Moafi 
+
+Research Interests:
+Graph Representation Learning • Single-Cell Genomics • Biomedical AI
+
+Repository:
+https://github.com/AIReasercher20/CELLGRAPH
+================================================================================
