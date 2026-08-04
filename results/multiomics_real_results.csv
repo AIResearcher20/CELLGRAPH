@@ -1,0 +1,2 @@
+Model,Accuracy,Macro F1,Silhouette,Dataset
+Multi-Omics GAT (RNA + ATAC-like),0.8,0.7376804618216449,0.22465453,PBMC 3k (REAL)
